@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Create a new task"
+        android:background="@drawable/background_design"
+        android:gravity="center"
+        android:padding="10dp"
+        android:textColor="#fff"
+        android:textStyle="bold|italic"
+        android:textSize="20sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Task to do"
+                android:textStyle="bold|italic"
+                android:layout_margin="10dp"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="4"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/etTaskName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter task name"
+                android:textStyle="bold|italic"
+                android:layout_margin="10dp"
+                android:drawableStart="@drawable/ic_baseline_list_alt_24"
+                android:drawablePadding="10dp"
+                />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Task details"
+                android:textStyle="bold|italic"
+                android:layout_margin="10dp"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="4"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/etTaskDetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter task details"
+                android:textStyle="bold|italic"
+                android:layout_margin="10dp"
+                android:drawableStart="@drawable/ic_baseline_list_alt_24"
+                android:drawablePadding="10dp"
+                />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+
+    
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnCancel"
+            android:text="Cancel"
+            android:textColor="#fff"
+            android:background="#474646"
+            android:textAllCaps="false"
+            android:drawableStart="@drawable/ic_baseline_clear_24"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            />
+    </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2">
+
+          <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnSave"
+                android:text="Save"
+                android:gravity="center"
+                android:textColor="#fff"
+                android:background="#474646"
+                android:textAllCaps="false"
+                android:drawableStart="@drawable/ic_baseline_save_24"
+                android:paddingLeft="40dp"
+              android:paddingRight="40dp"
+                android:layout_margin="10dp"
+                />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

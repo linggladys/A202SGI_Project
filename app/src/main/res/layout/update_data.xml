@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Update your task"
+        android:gravity="center"
+        android:background="@drawable/background_design"
+        android:textColor="#fff"
+        android:padding="10dp"
+        android:textSize="20sp"
+        android:textStyle="italic|bold"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Task to do"
+                android:textStyle="bold|italic"
+                android:textColor="#000"
+                android:layout_margin="10dp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4">
+
+            <EditText
+                android:id="@+id/updateTask"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Update your task name"
+                android:textStyle="bold|italic"
+                android:drawableStart="@drawable/ic_baseline_list_alt_24"
+                android:drawablePadding="10dp"
+                android:textColor="#000"
+                android:layout_margin="10dp"/>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Task details"
+                android:textStyle="bold|italic"
+                android:textColor="#000"
+                android:layout_margin="10dp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4">
+
+            <EditText
+                android:id="@+id/updateDetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Update your task details"
+                android:textStyle="bold|italic"
+                android:drawableStart="@drawable/ic_baseline_list_alt_24"
+                android:drawablePadding="10dp"
+                android:textColor="#000"
+                android:layout_margin="10dp"/>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnUpdate"
+                android:text="Update"
+                android:textColor="#fff"
+                android:background="#474646"
+                android:textAllCaps="false"
+                android:drawableStart="@drawable/ic_baseline_update_24"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:paddingLeft="40dp"
+                android:paddingRight="40dp"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnDel"
+                android:text="Delete"
+                android:gravity="center"
+                android:textColor="#fff"
+                android:background="#474646"
+                android:textAllCaps="false"
+                android:drawableStart="@drawable/ic_baseline_delete_24"
+                android:paddingLeft="40dp"
+                android:paddingRight="40dp"
+                android:layout_margin="10dp"
+                />
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>
